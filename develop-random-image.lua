@@ -1,6 +1,7 @@
 local LrLogger = import 'LrLogger'
 local LrDialogs = import 'LrDialogs'
 local LrApplication = import 'LrApplication'
+local LrApplicationView = import 'LrApplicationView'
 local LrTasks = import 'LrTasks'
 
 local logger = LrLogger('DevelopRandomImagePlugin')
@@ -8,8 +9,6 @@ logger:enable('logfile')
 local log = logger:quickf('info')
 
 LrTasks.startAsyncTask(function ()
-  log('Starting async plugin…')
-
   local catalog = LrApplication.activeCatalog()
   local photos = catalog:getAllPhotos()
 
@@ -18,6 +17,12 @@ LrTasks.startAsyncTask(function ()
   log(string.format('%d total images', #photos))
   log(string.format('Our random image index is %d', randomIndex))
 
-  LrDialogs.message(string.format('Our random image is %d', randomIndex))
+  local randomPhoto = photos[randomIndex]
+
+  log(string.format('Setting selected photo %d…', randomPhoto.localIdentifier))
+  catalog:setSelectedPhotos(randomPhoto, {})
+
+  log('Switching to develop mode…')
+  LrApplicationView.switchToModule('develop')
 
 end)
