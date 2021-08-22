@@ -13,6 +13,11 @@ LrTasks.startAsyncTask(function ()
   local catalog = LrApplication.activeCatalog()
   local photos = catalog:getAllPhotos()
 
-  LrDialogs.message(string.format('%d total images', #photos))
+  local randomIndex = math.random(1, #photos)
+
+  log(string.format('%d total images', #photos))
+  log(string.format('Our random image index is %d', randomIndex))
+
+  LrDialogs.message(string.format('Our random image is %d', randomIndex))
 
 end)
