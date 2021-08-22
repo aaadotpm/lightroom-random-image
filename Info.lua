@@ -6,5 +6,5 @@ return {
  
   LrToolkitIdentifier = "com.aaa.lightroom-random-image",
   LrPluginName = "AAA Random Image",
-  LrPluginInfoUrl="https://salt.aaa.pm/notes/adobe-lightroom-classic-random-plugin",
+  LrPluginInfoUrl="https://github.com/aaadotpm/lightroom-random-image",
 }
