@@ -13,8 +13,12 @@ return {
   LrPluginInfoUrl = "https://github.com/aaadotpm/lightroom-random-image",
   LrLibraryMenuItems = {
     {
-      title = "Develop random image",
-      file = "develop-random-image.lua",
-    }
+      title = "Select random image",
+      file = "select-random-image.lua",
+    },
+    {
+      title = "Develop selected image",
+      file = "develop-selected-image.lua",
+    },
   }
 }

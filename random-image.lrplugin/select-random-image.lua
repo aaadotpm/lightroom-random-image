@@ -22,7 +22,5 @@ LrTasks.startAsyncTask(function ()
   log(string.format('Setting selected photo %d…', randomPhoto.localIdentifier))
   catalog:setSelectedPhotos(randomPhoto, {})
 
-  log('Switching to develop mode…')
-  LrApplicationView.switchToModule('develop')
-
+  LrApplicationView.showView('loupe')
 end)
