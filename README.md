@@ -16,7 +16,7 @@ The plug-in has only been tested on a Mac using version 10 of Adobe Lightroom. F
 This software comes with no guarantees. Always use a test catalog when developing plug-ins.
 
 
-## Mapping keyboard shortcuts to plug-in functions on a Mac
+## Mapping keyboard shortcuts to plug-in functions on MacOS
 
 On a Mac it is easy to map keyboard shortcuts to any menu item of any application.
 
