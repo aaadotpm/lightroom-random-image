@@ -9,6 +9,8 @@ logger:enable('logfile')
 local log = logger:quickf('info')
 
 LrTasks.startAsyncTask(function ()
+  LrApplicationView.showView('grid')
+
   local catalog = LrApplication.activeCatalog()
   local photos = catalog:getAllPhotos()
 
