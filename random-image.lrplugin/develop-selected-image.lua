@@ -11,7 +11,7 @@ LrTasks.startAsyncTask(function ()
   local catalog = LrApplication.activeCatalog()
 
   -- Create virtual copy of selected image
-  catalog:createVirtualCopies('Random routine edit')
+  catalog:createVirtualCopies('aaadotpm-routine')
 
   log('Switching to develop mode…')
   LrApplicationView.switchToModule('develop')

@@ -8,8 +8,8 @@ return {
   LrSdkVersion = 10.0,
   LrSdkMinimumVersion = 10.0,
  
-  LrToolkitIdentifier = "com.aaa.lightroom-random-image",
-  LrPluginName = "AAA Random Image",
+  LrToolkitIdentifier = "com.aaadotpm.lightroom-random-image",
+  LrPluginName = "aaa.pm random image plug-in",
   LrPluginInfoUrl = "https://github.com/aaadotpm/lightroom-random-image",
   LrLibraryMenuItems = {
     {
