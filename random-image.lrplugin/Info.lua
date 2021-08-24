@@ -17,7 +17,7 @@ return {
       file = "select-random-image.lua",
     },
     {
-      title = "Develop selected image",
+      title = "Develop virtual copy of selected image",
       file = "develop-selected-image.lua",
     },
   }
