@@ -9,10 +9,11 @@ logger:enable('logfile')
 local log = logger:quickf('info')
 
 LrTasks.startAsyncTask(function ()
-  LrApplicationView.showView('grid')
-
   local catalog = LrApplication.activeCatalog()
   local photos = catalog:getAllPhotos()
+
+  LrApplicationView.showView('grid')
+  catalog:setActiveSources(catalog.kAllPhotos)
 
   local randomIndex = math.random(1, #photos)
 

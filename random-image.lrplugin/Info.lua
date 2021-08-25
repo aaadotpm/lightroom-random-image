@@ -2,7 +2,7 @@ return {
   VERSION = {
     major=0,
     minor=0,
-    revision=1
+    revision=2
   },
 
   LrSdkVersion = 10.0,
